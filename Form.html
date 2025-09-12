@@ -8,14 +8,31 @@
 <h1>Forms</h1>
 <p>Two major types of forms are know as GET and POST</p>
 Get Form:
+
 <form action="Links.html" method="GET">
-    <input type="text" name="data">
-    <input type="submit">
-</form>
-Post Form:
-<form action="Links.html" method="POST">
-    <input type="text" name="data">
-    <input type="submit">
+    <label for="name">Name: </label>
+        <input type="text" name="name" id="name" placeholder="John Smith"><br />
+    <label for="email">Email: </label>
+        <input type="email" name="email" id="email" placeholder="yourEmail@domain.ext"><br />
+    <label for="phone"></label>
+        <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="(123)-45-678"><br />
+    <!--Check box-->
+    <input type="checkbox" name="emailConsent" id="emailConsent" checked=>
+        <label for="emailConsent">May we send you promotional nonsense?</label><br />
+   <!-- Radio Buttons
+        Name must be the same to link
+        Value and id should reflect the actual choice-->
+    <input type="radio" id="prefemail" name="contacttype" value="email">
+        <label for="prefemail">Email</label><br />
+
+    <input type="radio" id="prefSnailmail" name="contacttype" value="email">
+        <label for="prefSnailmail">Snailmail</label><br />
+
+    <input type="radio" id="prefphone" name="contacttype" value="email">
+        <label for="prefphone">Phone</label><br />
+    <!-- End Radio Buttons -->
+
+    <input type="submit"
 </form>
 
 </body>
